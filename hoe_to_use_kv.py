@@ -33,7 +33,7 @@ class MyLayout(Widget):
         circle_d_miles_plus = kainos_kitos[3]
         circle_dz = kainos_kitos[4]
         circle_lng = kainos_kitos[5]
-        message = '95 Miles = ' + circle_95_miles + '\n' + '95 Miles Plus = ' + circle_95_miles_plus
+        message = '95 Miles = ' + circle_95_miles + '\n' + '95 Miles Plus = ' + circle_95_miles_plus + '\n' + '98 Miles Plus = ' + circle_98_miles_plus + '\n' + 'D Miles = ' + circle_d_miles + '\n' +  'D Miles Plus = ' + circle_d_miles_plus + '\n' +'DZ = ' + circle_dz + '\n' + 'LNG = ' + circle_lng
         self.ids.lbl.text = message
         print(circle_95_miles,circle_95_miles_plus,circle_98_miles_plus,circle_d_miles, circle_d_miles_plus, circle_dz, circle_lng)
 
@@ -41,7 +41,7 @@ class MyLayout(Widget):
 
  
 
-class kvfileApp(App):
+class Degalines(App):
     def build(self):
         return MyLayout()
 
@@ -49,5 +49,5 @@ class kvfileApp(App):
 
 
 if __name__ == '__main__': 
-    kv = kvfileApp()
+    kv = Degalines()
     kv.run()
