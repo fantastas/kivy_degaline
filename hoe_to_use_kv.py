@@ -16,7 +16,8 @@ from kivy.properties import ObjectProperty
 Builder.load_file('kvfile.kv')
 
 class MyLayout(Widget):
-	
+
+
     def circle(self):
         response_API = requests.get('https://www.circlek.lt/privatiems/degalu-kainos')
 		# print(response_API.status_code)
@@ -32,6 +33,8 @@ class MyLayout(Widget):
         circle_d_miles_plus = kainos_kitos[3]
         circle_dz = kainos_kitos[4]
         circle_lng = kainos_kitos[5]
+        message = '95 Miles = ' + circle_95_miles + '\n' + '95 Miles Plus = ' + circle_95_miles_plus
+        self.ids.lbl.text = message
         print(circle_95_miles,circle_95_miles_plus,circle_98_miles_plus,circle_d_miles, circle_d_miles_plus, circle_dz, circle_lng)
 
 
