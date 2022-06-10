@@ -1,8 +1,4 @@
 
-# code how to use .kv file in kivy
- 
-# import kivy module
-import kivy
 import requests
 import json
 import re
